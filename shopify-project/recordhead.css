@@ -672,9 +672,12 @@ p.discount1{
     letter-spacing: 0.3em;
    text-align: center;
    padding-bottom: 6px;
- margin-top: 180px;
- /* margin-bottom: 160px; */
- width: 89%;
+ margin-top: 130px;
+ margin-bottom: 70px;
+ margin-left: 60px;
+ width: 90%;
+ /* padding: 0 0 0 100px; */
+
 
  
 }
@@ -696,14 +699,14 @@ h1.line{
 }
 .box1{
     color: white;
-    /* display: inline-block; */
+    display: inline-block;
     width: 5%;
     padding-left: 20px;
     font-size: 28px;
     cursor: pointer;
     vertical-align: middle;
     position: absolute;
-
+    top:calc(50% - 14px);
    
    
 }
@@ -716,8 +719,8 @@ h1.line{
     cursor: pointer;
     vertical-align: middle;
     position: absolute;
-  
-}
+    top:calc(50% - 14px);
+    }
 
 .btn3{
     display: inline-block;
@@ -869,7 +872,7 @@ h1.line{
 }
 input.newsletter{
     border: 2px solid #bbbbbb;
-    width: auto;
+    width: 160px;
     padding: 7.5px 10px 8.5px;
     border-radius: 0;
     line-height: 1.42;
@@ -884,7 +887,7 @@ input.newsletter{
     background-color: transparent;
     display: table-cell;
     vertical-align: middle;
-    margin: 0;
+    margin: 0 10px 10px 0;
     height: 37px;
     /* font: 400 12px Arial; */
     text-align: start;
@@ -910,8 +913,9 @@ input.newsletter{
     border: 2px solid #1ebf90;
     color: #1ebf90;
     border-radius: 0;
-    width:150px;
+    width:160px;
     text-align: center;
+    margin-bottom: 10px;
 }
 .btn4:hover{
     color: black;
@@ -1069,7 +1073,7 @@ ul.foot-nav{
     text-indent: 0.05em;
     text-transform: uppercase;
     max-width: 80%;
-    margin-left: 10px;
+    /* margin-left: 10px; */
     line-height: 1.42;
     /* text-align: center; */
     vertical-align: middle;
@@ -1079,8 +1083,9 @@ ul.foot-nav{
     border: 2px solid black;
     color: black;
     border-radius: 0;
-    width:150px;
+    width:160px;
     text-align: center;
+    margin-bottom: 10px;
 }
 .btn5:hover{
     color: #1ebf90;
