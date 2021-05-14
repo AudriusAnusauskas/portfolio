@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-color: cornflowerblue;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /* height: 600px; */
+  /* flex-wrap: wrap; */
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-line-pack: space-evenly;
+      align-content: space-evenly;
+}
+
+.head-bin {
+  /* width: 100%; */
+  background-color: palegoldenrod;
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.nav-row {
+  display: none;
+  width: 100vw;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: rgba(255, 255, 255, 0.9);
+  background-color: #141414;
+}
+
+.nav-column {
+  height: 100vh;
+  width: 240px;
+  background-color: #948080;
+  /* display: block; */
+  /* flex-basis: 0; */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: rgba(255, 255, 255, 0.9);
+  background-color: #141414;
+}
+
+.pg-head-bin {
+  height: 100vh;
+  background-color: #c2bbad;
+  width: calc(100% - 240px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /* flex-shrink: 1; */
+}
+
+.pg-head {
+  height: 40px;
+  background-color: orange;
+  /* flex-basis: 0; */
+  width: 100vw;
+}
+
+.header-main {
+  width: 100vw;
+}
+
+@media screen and (max-width: 800px) {
+  .nav-column {
+    display: none;
+  }
+  .nav-row {
+    display: block;
+    height: 100px;
+    position: relative;
+  }
+  .nav-row .logo-bin2 {
+    display: block;
+    height: 100px;
+    width: 10%;
+    background-image: url(img/logo.jpeg);
+  }
+  .pg-head-bin {
+    width: 100vw;
+  }
+}
+/*# sourceMappingURL=style.css.map */
