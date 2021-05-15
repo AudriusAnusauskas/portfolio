@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -13,13 +15,22 @@
     <header class="header">
         <div class="nav-row">
             <div class="burger-bin">
-                
+                <i class="fas fa-bars"></i>
             </div>
             
             <div class="logo-bin2">
                 <img src="img/logo.jpeg" alt="">
             </div>
-            <div class="cart-bin"></div>
+            <div class="cart-bin">
+                <a href="" id="customer_login_link"><i style="font-size: 14px; padding-right: 10px;" class="fas fa-search"></i></a> 
+                                
+
+                                <button type="button" class="currency-button" >
+                                    USD $ <i class="fas fa-chevron-down"></i>
+                                  </button>
+
+                                <a href="" >Cart (0)</a>
+            </div>
         
         
         </div>
@@ -27,15 +38,15 @@
         <div class="head-bin">
         
             <div class="nav-column">
-                <div class="logo-bin"></div>
-                <ul>
-                    <li class="navi">Home</li>
-                    <li class="navi">Collections</li>
-                    <li class="navi">Shop Outdoor Gear</li>
-                    <li class="navi">Our Story</li>
-                    <li class="navi">Clearance</li>
-                    <li class="navi">Demos</li>
-                    <li class="navi">Contact</li>
+                <div class="logo-bin"> <img src="img/logo.jpeg" alt=""></div>
+                <ul class="navi-col">
+                    <li class="navi"> <a href="">Home</a></li>
+                    <li class="navi"><a href="">Collections</a></li>
+                    <li class="navi"><a href="">Shop Outdoor Gear</a></li>
+                    <li class="navi"><a href="">Our Story</a></li>
+                    <li class="navi"><a href="">♥ Clearance</a></li>
+                    <li class="navi"><a href="">Demos</a></li>
+                    <li class="navi"><a href="">Contact</a></li>
     
                 </ul>
             
@@ -45,11 +56,75 @@
 
 
             <div class="pg-head-bin">  
-                <div class="pg-head"><span>pg-head</span></div>
-                <div class="header-main"><span>header-main</span></div>
+                <div class="pg-head">
+                    <div class="pg-head-inner"> 
+                        <a class="head-link" href="">New Arrivals Now Online & In-store</a> 
+                        
+                        <div class="account-links">
+        
+                            <a href="/account/login" id="customer_login_link">Log in</a> /
+                            <a href="/account/register" id="customer_register_link">Register</a>
+                            
+                            <div class="cart">
+                                <a href="" id="customer_login_link"><i style="font-size: 14px; padding-right: 10px;" class="fas fa-search"></i></a> 
+                                
+
+                                <button type="button" class="currency-button" >
+                                    USD $ <i class="fas fa-chevron-down"></i>
+                                  </button>
+
+                                <a href="" >Cart (0)</a>
+                            </div>
+                        </div>
+
+                          
+
+                    </div>
+                </div>
+
+
+
+
+                <div class="header-main">
+                    
+                    
+                    
+                    
+                    
+                    
+                    <span>header-main</span></div>
+
+
+
+
+
+
+                    
             </div>
+
+
+
+
+
         </div>
+
     </header>
+    <main>
+        <div class="main-bin">
+            <div class="men"></div>
+            <div class="women"></div>
+            <div class="mens"></div>
+            <div class="mens"></div>
+            <div class="mens"></div>
+
+
+
+        </div>
+
+
+
+
+    </main>
     
 </body>
 </html>
