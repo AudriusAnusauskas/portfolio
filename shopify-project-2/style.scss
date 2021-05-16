@@ -12,7 +12,7 @@ header{
     display: flex;
     width: 100%;
     height: 100vh;
-    background-color: cornflowerblue;
+    // background-color: cornflowerblue;
     flex-direction: column;
     /* height: 600px; */
     /* flex-wrap: wrap; */
@@ -23,7 +23,7 @@ header{
 }
 .head-bin{
     /* width: 100%; */
-    background-color:palegoldenrod;
+    // background-color:palegoldenrod;
     height: 20%;
     display: flex;
     flex-direction: row;
@@ -40,7 +40,7 @@ background-color: #141414;
 
 
 .nav-column{
-    // position: fixed;
+    position: fixed;
     height: 100vh;
     width: 240px;
     // background-color: rgb(148, 128, 128);
@@ -70,7 +70,7 @@ background-color: #141414;
 
 .pg-head-bin{
     height: 100vh;
-    background-color: rgb(194, 187, 173);
+    // background-color: rgb(194, 187, 173);
     width: calc(100% - 240px);
     display: flex;
     flex-direction: column;
@@ -82,13 +82,14 @@ background-color: #141414;
     background: #f45902;
     color: #fff;
     // text-align: center;
-    position: static;
+    position: fixed;
     z-index: 4;
-    left: 240px;
     top: 0;
     right: 0;
+    left: 0;
     padding: 1px 20px;
-    // width: calc (100vw - 240px);
+    // width: 100%;
+    margin-left: 240px;
     .pg-head-inner{
         padding: 0 ;
         margin-left: 30px;
@@ -160,7 +161,49 @@ background-color: #141414;
     background-size: cover;   
     position: relative;
     display: block;
+    margin-left: 240px;
 }
+.main-item, .main-item2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 240px;
+    // height: 310px;
+    margin-left: 240px;
+    
+}
+
+.men, .women, .hero, .soctober, .gear{
+        display: block;       
+        background-image: url(img/men.jpg);
+        background-position: center center;
+        background-size: cover;   
+        height: 310px;
+        width:100%;
+        margin: 50px 70px 0 70px;
+    }
+.men{
+    background-image: url(img/men.jpg);
+}
+.women{
+    background-image: url(img/women.jpeg);
+    margin-top: 20px;
+}
+.hero{
+    background-image: url(img/gopro.jpeg);
+    margin-top: 20px;
+}
+.soctober{
+    background-image: url(img/Socktober.jpeg);
+    margin-top: 20px;
+}
+.gear{
+    background-image: url(img/GearPatrol.jpeg);
+    margin-top: 20px;
+}
+
+
+
 
 @media screen and (max-width:800px) {
     .nav-column{
@@ -179,7 +222,7 @@ background-color: #141414;
            height: 125px;
            width: 125px;
            
-
+        }
        }
        .cart-bin{
         margin-right: 20px;
@@ -205,11 +248,17 @@ background-color: #141414;
         width:150px;
         font-size: 20px;
     }
+    
+    .header-main{
+        margin: 0;
+        // overflow: hidden; 
+        height: calc(100vh - 180px);
     }
 
     .pg-head-bin{
         
         width: 100vw;
+        height: calc(100vh - 130px);
     }
     .pg-head {
         height: 30px;
@@ -218,12 +267,106 @@ background-color: #141414;
         text-align: center;
         padding: 1px 20px;
         width: 100vw;
+        margin: 0;
         
         .account-links{
             display: none;
         }
         .pg-head-inner{
             justify-content: center;
+        }
+    }
+    
+    
+    
+    
+    .main-bin{
+        display: flex;
+        flex-direction: column;
+        // margin-top: 150px;
+       
+        .row{
+        display: flex;
+        flex-direction: row;
+        margin: 20px 50px 0 50px;
+             
+            .main-item{
+            display: flex;
+            margin: 0;
+            width: 100%;
+            flex-direction: row; 
+                .men, .women, .soctober, .gear{
+                    display: block;        
+                    height: 310px;
+                    width:100%;
+                    margin:0 10px 0 10px;
+                }
+            }
+        }
+        .row2{
+            display: flex;
+            flex-direction: row;
+            margin: 20px 60px 0 60px;
+             
+            .main-item2{
+            display: flex;
+            margin: 0;
+            width: 100%;
+            flex-direction: row; 
+                .hero{
+                    display: block;        
+                    height: 310px;
+                    width:100%;
+                    margin:0 ;
+                }
+            }
+        }
+    }
+   
+}
+
+@media screen and (min-width:1100px) {
+
+    .main-bin{
+        display: flex;
+        flex-direction: column;
+        margin-left: 240px;
+       
+        .row{
+        display: flex;
+        flex-direction: row;
+        margin: 20px 50px 0 50px;
+             
+            .main-item{
+            display: flex;
+            margin: 0;
+            width: 100%;
+            flex-direction: row; 
+                .men, .women, .soctober, .gear{
+                    display: block;        
+                    height: 310px;
+                    width:100%;
+                    margin:0 10px 0 10px;
+                }
+            }
+        }
+        .row2{
+            display: flex;
+            flex-direction: row;
+            margin: 20px 60px 0 60px;
+             
+            .main-item2{
+            display: flex;
+            margin: 0;
+            width: 100%;
+            flex-direction: row; 
+                .hero{
+                    display: block;        
+                    height: 310px;
+                    width:100%;
+                    margin:0 ;
+                }
+            }
         }
     }
 }

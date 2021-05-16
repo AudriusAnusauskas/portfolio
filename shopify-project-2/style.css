@@ -15,7 +15,6 @@ header {
   display: flex;
   width: 100%;
   height: 100vh;
-  background-color: cornflowerblue;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -34,7 +33,6 @@ header {
 
 .head-bin {
   /* width: 100%; */
-  background-color: palegoldenrod;
   height: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -57,6 +55,7 @@ header {
 }
 
 .nav-column {
+  position: fixed;
   height: 100vh;
   width: 240px;
   /* display: block; */
@@ -86,7 +85,6 @@ header {
 
 .pg-head-bin {
   height: 100vh;
-  background-color: #c2bbad;
   width: calc(100% - 240px);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -102,12 +100,13 @@ header {
   height: 30px;
   background: #f45902;
   color: #fff;
-  position: static;
+  position: fixed;
   z-index: 4;
-  left: 240px;
   top: 0;
   right: 0;
+  left: 0;
   padding: 1px 20px;
+  margin-left: 240px;
 }
 
 .pg-head .pg-head-inner {
@@ -182,6 +181,55 @@ header {
   background-size: cover;
   position: relative;
   display: block;
+  margin-left: 240px;
+}
+
+.main-item, .main-item2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  left: 240px;
+  margin-left: 240px;
+}
+
+.men, .women, .hero, .soctober, .gear {
+  display: block;
+  background-image: url(img/men.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 310px;
+  width: 100%;
+  margin: 50px 70px 0 70px;
+}
+
+.men {
+  background-image: url(img/men.jpg);
+}
+
+.women {
+  background-image: url(img/women.jpeg);
+  margin-top: 20px;
+}
+
+.hero {
+  background-image: url(img/gopro.jpeg);
+  margin-top: 20px;
+}
+
+.soctober {
+  background-image: url(img/Socktober.jpeg);
+  margin-top: 20px;
+}
+
+.gear {
+  background-image: url(img/GearPatrol.jpeg);
+  margin-top: 20px;
 }
 
 @media screen and (max-width: 800px) {
@@ -207,7 +255,7 @@ header {
     height: 125px;
     width: 125px;
   }
-  .nav-row .cart-bin {
+  .cart-bin {
     margin-right: 20px;
     padding: 55px 0 0 0;
     border: 0;
@@ -218,20 +266,25 @@ header {
     font-weight: 600;
     letter-spacing: .8px;
   }
-  .nav-row .cart-bin a {
+  .cart-bin a {
     color: #fff;
   }
-  .nav-row .cart-bin a:hover {
+  .cart-bin a:hover {
     color: rgba(255, 255, 255, 0.9);
   }
-  .nav-row .burger-bin {
+  .burger-bin {
     margin-left: 40px;
     padding: 55px 0 0 0;
     width: 150px;
     font-size: 20px;
   }
+  .header-main {
+    margin: 0;
+    height: calc(100vh - 180px);
+  }
   .pg-head-bin {
     width: 100vw;
+    height: calc(100vh - 130px);
   }
   .pg-head {
     height: 30px;
@@ -240,6 +293,7 @@ header {
     text-align: center;
     padding: 1px 20px;
     width: 100vw;
+    margin: 0;
   }
   .pg-head .account-links {
     display: none;
@@ -248,6 +302,136 @@ header {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .main-bin {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-bin .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 20px 50px 0 50px;
+  }
+  .main-bin .row .main-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .main-bin .row .main-item .men, .main-bin .row .main-item .women, .main-bin .row .main-item .soctober, .main-bin .row .main-item .gear {
+    display: block;
+    height: 310px;
+    width: 100%;
+    margin: 0 10px 0 10px;
+  }
+  .main-bin .row2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 20px 60px 0 60px;
+  }
+  .main-bin .row2 .main-item2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .main-bin .row2 .main-item2 .hero {
+    display: block;
+    height: 310px;
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .main-bin {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 240px;
+  }
+  .main-bin .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 20px 50px 0 50px;
+  }
+  .main-bin .row .main-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .main-bin .row .main-item .men, .main-bin .row .main-item .women, .main-bin .row .main-item .soctober, .main-bin .row .main-item .gear {
+    display: block;
+    height: 310px;
+    width: 100%;
+    margin: 0 10px 0 10px;
+  }
+  .main-bin .row2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 20px 60px 0 60px;
+  }
+  .main-bin .row2 .main-item2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .main-bin .row2 .main-item2 .hero {
+    display: block;
+    height: 310px;
+    width: 100%;
+    margin: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
