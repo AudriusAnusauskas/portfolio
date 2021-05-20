@@ -1,0 +1,195 @@
+
+.header-main{
+    background-image: url(img/Virselis01.jpeg);
+    width: 100%;
+    height: 100vh;
+    /* border: 1px solid black; */
+    background-position: center center;
+    background-size: cover;   
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 240px;
+
+.overlay-text {
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    // text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 40px;
+    z-index: 2;
+    color: #fff;
+    .dar-vienas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+   
+    h1{
+        font-family: serif;
+        font-size: 58px;
+        text-align: left;
+        margin:0;
+        margin-bottom: 30px;
+        
+    }
+    p{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 22px;
+    }
+    a{
+        display: inline-block;
+        border: 2px solid white;
+        padding: 15px 30px;
+        color: white;
+        margin-top: 30px;
+        letter-spacing: 1px;
+        font-weight: bold;
+        font-size: 14px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        
+        &:hover{ 
+            background-color: white;
+            color: black;
+        }
+    }
+}
+}
+}
+
+.men-inner{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 310px;
+        cursor: pointer;
+        // transition: all 1s;
+    
+    .dar-vienas{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        
+        
+        h1{
+            font-family: serif;
+            font-size: 34px;
+            text-align: left;
+            margin:0;
+            // margin-bottom: 30px;
+            
+        }
+        p{
+            display: none;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        a{
+            display: inline-block;
+            border: 2px solid white;
+           padding:15px 30px;
+            color: white;
+            margin-top: 30px;
+            letter-spacing: 1px;
+            font-weight: bold;
+            font-size: 14px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            overflow: hidden;
+            transition: all 1s;
+            opacity: 0;
+        }
+    }
+    &:hover{ 
+        
+        p{
+            display: block;
+            
+        }
+       a{
+           
+           display: inline-block;
+            opacity: 1;
+            margin-bottom: 30px;
+   
+           &:hover{ 
+            transition: all .5s;
+               background-color: white;
+               color: black;
+           }
+       }
+   }
+}
+
+.video-bin-inner{
+    position: relative;
+    margin-left: 240px;
+
+    .overlay-text {
+        
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 40px;
+        z-index: 2;
+        color: #fff;
+            .dar-vienas{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            
+        
+            h1{
+                font-family: serif;
+                font-size: 58px;
+                text-align: left;
+                margin:0;
+                margin-bottom: 30px;
+                text-align: center;
+                
+                
+            }
+            p{
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 22px;
+                text-align: center;
+            }
+            a{
+                display: inline-block;
+                border: 2px solid white;
+                padding: 15px 30px;
+                color: white;
+                margin-top: 30px;
+                letter-spacing: 1px;
+                font-weight: bold;
+                font-size: 14px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                text-align: center;
+                
+                &:hover{ 
+                    background-color: white;
+                    color: black;
+                }
+            }
+        }
+    }
+    
+}
