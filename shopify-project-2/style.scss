@@ -255,7 +255,10 @@ background-color: #141414;
             
             .img-cont1{
                 background-image: url(img/water-bottle.jpeg);
-                display: block;
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                padding-bottom: 10px;
                 background-position: center center;
                 background-size: contain;   
                 background-repeat: no-repeat; 
@@ -263,6 +266,11 @@ background-color: #141414;
                 width:80%;
                 margin: 0 30px 0 50px;
                 border-bottom: 1px solid #e7e7e7;
+                &:hover{
+                    .butt{
+                        display: inline-block;
+                    }
+                }
                 
             }
             .price-area1{
@@ -282,7 +290,10 @@ background-color: #141414;
                 
             .img-cont2{
                 background-image: url(img/knife.jpeg);
-                display: block;
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                padding-bottom: 10px;
                 background-position: center center;
                 background-size: contain;   
                 background-repeat: no-repeat; 
@@ -291,6 +302,12 @@ background-color: #141414;
                 margin: 0px;
                 margin-right: 20px;
                 border-bottom: 1px solid #e7e7e7;
+                &:hover{
+                    .butt{
+                        display: inline-block;
+                    }
+                }
+                
             }
             .price-area2{
                 padding-top: 15px;
@@ -315,6 +332,9 @@ background-color: #141414;
             .img-cont3{
                 background-image: url(img/axe.jpeg);
                 display: block;
+                justify-content: center;
+                align-items: flex-end;
+                // padding-bottom: 10px;
                 background-position: center center;
                 background-size: contain;
                 background-repeat: no-repeat;   
@@ -323,6 +343,8 @@ background-color: #141414;
                 margin: 0px;
                 margin-right: 20px;
                 border-bottom: 1px solid #e7e7e7;
+                overflow: hidden;
+                
             }
         }
         .price-area3{
@@ -448,7 +470,7 @@ background-color: #141414;
 
 
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:850px) {
     .nav-column{
         display: none;
         
@@ -585,11 +607,26 @@ background-color: #141414;
                 margin: 0px;
                 margin-right: 20px;
                 border-bottom: 1px solid #e7e7e7;
+                &:hover{
+                    .butt{
+                        display: inline-block;
+                    }
+                }
         }
     }
         }
     }
     
+    .blog-bin{
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        // justify-content: center;
+        margin-left: 0;
+       
+        height: 500px;
+        width: 100%;
+    }
    
 }
 
@@ -657,6 +694,11 @@ background-color: #141414;
                 margin: 0px;
                 margin-right: 20px;
                 border-bottom: 1px solid #e7e7e7;
+                &:hover{
+                    .butt{
+                        display: inline-block;
+                    }
+                }
         }
     }
         }
